@@ -60,7 +60,7 @@ function getSalePrice(originalPrice) {
 }
 
 function getSalePrices(threeOriginalPrices) {
-var priceList = [20.50; 60.50; 100.50];
+var priceList = [20.50, 60.50, 100.50];
 priceList[0] = priceList[0] * saleAmount;
 priceList[1] = priceList[1] * saleAmount;
 priceList[2] = priceList[2] * saleAmount;
@@ -78,6 +78,9 @@ function incrementCounter() {
   // and then calls showCounter to update the interface with the new value.
   // Test your code by opening the developer console and calling incrementCounter.
   // The displayed answer for this question should increase by 1!
+  counter++;
+  showCounter();
+  return counter;
 }
 function showCounter() {
   // updates the counter element with the latest value
